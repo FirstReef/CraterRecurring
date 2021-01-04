@@ -18,7 +18,7 @@ use Crater\Models\CustomField;
 
 use Carbon\Carbon;
 
-use FirstReef\CraterRecurring\RecurringPattern;
+use FirstReef\CraterRecurring\Models\RecurringPattern;
 
 class CreateOrUpdateRecurringInvoice implements ShouldQueue
 {

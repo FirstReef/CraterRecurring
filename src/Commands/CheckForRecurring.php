@@ -10,7 +10,7 @@ use Vinkla\Hashids\Facades\Hashids;
 use Carbon\Carbon;
 
 use FirstReef\CraterRecurring\CraterRecurringProvider as CRProvider;
-use FirstReef\CraterRecurring\RecurringPattern;
+use FirstReef\CraterRecurring\Models\RecurringPattern;
 
 use FirstReef\CraterRecurring\Jobs\ReplicateInvoice;
 

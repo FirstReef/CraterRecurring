@@ -43,7 +43,7 @@ class CraterRecurringProvider extends ServiceProvider
     public function boot()
     {
         // Publish necessary assets
-        $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         $this->loadViewsFrom(__DIR__.'/views', 'craterrecurring');
         $this->publishes([
