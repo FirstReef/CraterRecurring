@@ -1,11 +1,44 @@
 {
     "name": "firstreef/craterrecurring",
     "description": "Enable recurring invoices for Crater Invoicing App",
+    "keywords": [
+        "firstreef",
+        "craterrecurring",
+        "recurring",
+        "invoices",
+        "crater",
+        "laravel"
+    ],
+    "homepage": "https://github.com/FirstReef/CraterRecurring",
+    "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "First Reef",
-            "email": "devs@firstreef.com.au"
+            "email": "devs@firstreef.com.au",
+            "homepage": "https://firstreef.com.au",
+            "role": "Developer"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "FirstReef\\CraterRecurring\\": "src"
+        }
+    },
+    "scripts": {
+        "post-package-install:": "php artisan recurring:install",
+        "post-package-update:": "php artisan recurring:install"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FirstReef\\CraterRecurring\\CraterRecurringProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
