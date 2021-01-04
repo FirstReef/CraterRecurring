@@ -1,0 +1,11 @@
+{
+    "name": "firstreef/craterrecurring",
+    "description": "Enable recurring invoices for Crater Invoicing App",
+    "authors": [
+        {
+            "name": "First Reef",
+            "email": "devs@firstreef.com.au"
+        }
+    ],
+    "require": {}
+}
