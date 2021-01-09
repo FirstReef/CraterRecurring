@@ -29,14 +29,14 @@ After installing, run the following from the command line:
 php artisan recurring:install
 ```
 
-Finally, to allow the package to automatically generate invoices, set up the laravel schedule/cron
+Finally, to allow the package to automatically generate invoices, set up the laravel schedule/cron. You have 2 options:
 
-### Using Laravel Forge, go to Server > Scheduling and add a new schedule to run every minute:
+### 1) Using Laravel Forge, go to Server > Scheduling and add a new schedule to run every minute:
 ```
 php7.4 /home/forge/{app_domain}/artisan schedule:run
 ```
 
-### or setup via SSH
+### 2) Setup via SSH using crond
 SSH into your server and run
 ```bash
 crontab -e
